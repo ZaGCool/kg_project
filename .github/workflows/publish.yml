@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     # runs-on  指定job任务运行时所需的虚拟机环境
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-latest
     steps:
       # 获取源码
       - name: 迁出代码
@@ -19,7 +19,7 @@ jobs:
 
       - name: 安装nodejs
         # 使用action库 actions/setup-node 安装node
-        uses: actions/setup-node@master
+        uses: actions/setup-node@v2
         with:
           node-version: 16.4.2
         
