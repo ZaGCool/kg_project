@@ -21,7 +21,7 @@ import axios from 'axios'
 // 把axios挂载Vue的prototype 身上  所有的vue实例以及组件都可以访问了
 Vue.prototype.$axios = axios;
 
-axios.defaults.baseURL = '/api';
+axios.defaults.baseURL = 'http://localhost:4000/api';
 
 Vue.filter('imgFilter', (inp) => {
     return inp.replace(/{size}/, '400')
