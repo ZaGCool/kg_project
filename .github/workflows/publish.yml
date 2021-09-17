@@ -19,7 +19,7 @@ jobs:
 
       - name: 安装nodejs
         # 使用action库 actions/setup-node 安装node
-        uses: actions/setup-node@/v2
+        uses: actions/setup-node@v2
         with:
           node-version: 16.4.2
         
