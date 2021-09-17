@@ -1,0 +1,57 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  appearance: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+a:hover {
+  color: #333;
+}
+html {
+  font-size: 6.25vw;
+}
+body {
+  font-family: 'Microsoft Yahei';
+  color: #333;
+}
+em,
+i {
+  font-style: normal;
+}
+strong,
+b {
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+input,
+textarea {
+  outline: none;
+  resize: none;
+}
+table {
+  border-collapse: collapse;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}

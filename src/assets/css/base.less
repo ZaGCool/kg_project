@@ -1,0 +1,60 @@
+// 样式重置
+@c: #333;
+*,*:after,*:before {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  appearance: none;  // 控件默认外观都去掉
+}
+
+a  {
+  color: @c;
+  text-decoration: none;
+  // 移动端点按a标签 高亮的显示 去掉
+  -webkit-tap-highlight-color: transparent; 
+  &:hover {
+    color: @c;
+  }
+}
+html {
+  font-size: 6.25vw; // 基于iphone5
+}
+body {
+  font-family: 'Microsoft Yahei';
+  color: @c;
+}
+em,i {
+  font-style: normal;
+}
+strong,b {
+  font-weight: normal;
+}
+ul,ol {
+  list-style: none;
+}
+input,textarea {
+  outline: none;
+  resize: none;
+}
+table {
+  border-collapse: collapse;
+}
+
+// 清除浮动
+.clearfix {
+  zoom: 1;
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
