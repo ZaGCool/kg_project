@@ -39,7 +39,7 @@ jobs:
           # scp参数
           ARGS: "-avzr --delete"
           # 原目录
-          SOURCE: "dist"
+          SOURCE: "./dist"
           # 服务器ip
           REMOTE_HOST: "47.107.57.59"
           # 用户
